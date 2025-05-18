@@ -58,6 +58,10 @@ app.whenReady().then(() => {
   //}
   //})
 
+  ipcMain.on('hide', () => {
+    mainWindow.hide()
+  })
+
   if (mainWindow) {
     mainWindow.show()
     mainWindow.focus()
