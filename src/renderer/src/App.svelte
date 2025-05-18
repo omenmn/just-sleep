@@ -2,7 +2,7 @@
   import CloseSVG from './assets/close.svelte'
   import MinimizeSVG from './assets/minimize.svelte'
 
-  const close = (): void => window.electron.ipcRenderer.send('hide')
+  const close = (): void => window.api.hide()
 </script>
 
 <div class="bg-gray-900 h-screen w-screen overflow-hidden text-[#f2f2f2] flex-col gap-4 p-5">
