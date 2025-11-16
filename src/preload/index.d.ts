@@ -5,6 +5,8 @@ declare global {
     electron: ElectronAPI
     api: {
       hide: () => void
+      getColors: () => Promise<object | null>
+      setBedtime: () => void
     }
   }
 }

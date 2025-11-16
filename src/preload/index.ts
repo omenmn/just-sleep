@@ -5,6 +5,10 @@ import { electronAPI } from '@electron-toolkit/preload'
 const api = {
   hide: () => {
     ipcRenderer.send('hide')
+  },
+  getColors: () => ipcRenderer.invoke('get-wal-colors'),
+  setBedtime: (time: string) => {
+    ipcRenderer.send('update-bedtime', time)
   }
 }
 

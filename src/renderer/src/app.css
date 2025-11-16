@@ -1,0 +1,36 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-*: initial;
+  --color-white: #fff;
+  --color-purple: #3f3cbb;
+  --color-midnight: #121063;
+  --color-tahiti: #3ab7bf;
+  --color-bermuda: #78dcca;
+  --color-bg: var(--color-midnight);
+  --color-fg: var(--color-white);
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-fg);
+}
+
+.button {
+  background-color: var(--color-purple);
+  color: var(--color-white);
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+}
+
+.button:hover {
+  background-color: var(--color-tahiti);
+}
+
+/* Optional: map all numeric colors if you want to use them in Tailwind utilities */
+:root {
+  --color-0: var(--color-midnight);
+  --color-1: var(--color-purple);
+  --color-2: var(--color-tahiti);
+  --color-3: var(--color-bermuda);
+}
